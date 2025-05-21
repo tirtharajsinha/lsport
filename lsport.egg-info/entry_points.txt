@@ -1,0 +1,2 @@
+[console_scripts]
+lsport = lsport.lsport:main
