@@ -1,4 +1,3 @@
-
 # lsport
 
 `lsport` is a simple Python command-line tool that lists serial devices connected to your system, specifically those found in the `/dev/serial/by-id/` directory. It displays device names and their corresponding ports. You can also format the output with a table or as plain text, and it handles different paths gracefully.
@@ -17,7 +16,7 @@ You will be able to install it from PyPI once published:
 
 ```bash
 pip install lsport
-````
+```
 
 ### Install from source
 
@@ -34,6 +33,14 @@ For editable installation (useful during development):
 ```bash
 pip install -e .
 ```
+
+You might need to add /home/<username>/.local/bin to path for that just add below line to `.bashrc`. but then lsport command will be only accessble to your user only.
+
+```
+export PATH="/home/<username>/.local/bin:$PATH"
+```
+
+> For Installing globally(accessble for all users) use '''sudo'''
 
 ## Usage
 
@@ -85,7 +92,7 @@ lsport --raw
 
 ## Dependencies
 
-* `tabulate` (for formatted table output)
+- `tabulate` (for formatted table output)
 
 To install all dependencies, run:
 
@@ -95,7 +102,7 @@ pip install lsport[table]
 
 ### Optional dependencies:
 
-* You can install `tabulate` separately if you only want table output:
+- You can install `tabulate` separately if you only want table output:
 
   ```bash
   pip install tabulate
@@ -117,8 +124,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 
-* **Name**: Tirtharaj Sinha
-* **Email**: [sinhatirtharaj@gmail.com](mailto:sinhatirtharaj@gmail.com)
-
-
-
+- **Name**: Tirtharaj Sinha
+- **Email**: [sinhatirtharaj@gmail.com](mailto:sinhatirtharaj@gmail.com)

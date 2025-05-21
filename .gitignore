@@ -7,10 +7,10 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-build/
-dist/
-*.egg-info/
-.eggs/
+**/build/
+**/dist/
+**/*.egg-info/
+**/.eggs/
 
 # Installer logs
 pip-log.txt
